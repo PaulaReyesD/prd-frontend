@@ -1,0 +1,10 @@
+.nav__link--active{
+  font-weight: bolder;
+}
+
+.producto__precio--oferta{
+  text-decoration: line-through;
+  font-weight: bold;
+  color: #6d6d6d;
+  margin-right: 5px;
+}

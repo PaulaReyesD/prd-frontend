@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Verde Moda</title>
         <!--Import de Google Fonts-->
-        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fleur+De+Leah&display=swap" rel="stylesheet">
         <!--Link archivos CSS-->
         <link rel="stylesheet" href="./assets/css/base.css">
         <link rel="stylesheet" href="./assets/css/layout.css">
@@ -14,6 +16,128 @@
     </head>
 
     <body>
+        <!--header-->
+        <header class="header">
+            <div class="header__user-bar">
+                <div class="header__titulo">
+                    <a href="index.html"><h1 class="header__logo">Verde Moda</h1></a>
+                </div>
+                <!--Buscador-->
+                <div class="header__usuario">
+                    <form class="header__buscador">
+                        <input class="buscador__input"type="text" name="buscar" id="buscar" placeholder="Buscar">
+                        <button class="buscador__btn" type="submit">
+                            <svg class="buscador__svg" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+                        </button>
+                    </form>
+                    <!--Área de Usuario-->                    
+                    <a class="header__cuenta" href="#" target="_self" >Mi cuenta</a>
+                    <a class="header__carrito" href="#" target="_self" >Carrito</a>                   
+                </div>
+            </div>
+            <!--Navbar menú-->
+            <div class="header__nav">
+                <nav class="nav">
+                    <ul class="nav__menu">
+                        <li><a class="nav__link--active" href="index.html" target="_self">INICIO</a></li>
+                        <li class="nav__link">
+                            <div class="btn__hover">
+                                <button class="catalogo__btn nav__link" type="button">
+                                CATÁLOGO<svg class="catalogo__svg" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 18 18"><path fill="#E5E0D8#E5E0D8" d="M13.708 6.29A1.006 1.006 0 0 0 13 6H5.005A1 1 0 0 0 4.3 7.71l4 4a1.013 1.013 0 0 0 1.42 0l4-4a1.01 1.01 0 0 0-.013-1.42z"/></svg>
+                                </button>
+                                <div class="desplegable__catalogo">
+                                    <h4 class="desplegable__titulo">Categorías Destacadas</h4>
+                                    <ul class="desplegable__list">
+                                        <li><a href=""><p>Vestuario</p></a></li>
+                                        <li><a href=""><p>Accesorios</p></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a class="nav__link" href="contact.html" target="_self">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
+        <!--MAIN-->
+        <main>
+            <!--Eslogan-->
+            <section class="hero">                
+                    <a class="hero__contenido" href="#">
+                        <h3 class="hero__eslogan">Moda sostenible, el cambio que el mundo necesita</h3>
+                    </a>
+            </section>
+            <!--Sección Ofertas de temporada-->
+            <section class="ofertas-temporada">
+                <div class="ofertas__contenido">
+                    <div class="ofertas__titulo"><h2>Ofertas de  Temporada</h2></div>
+                    <div class="productos__grid">                    
+                        <article class="producto">
+                            <img class="producto__img" src="https://images.squarespace-cdn.com/content/v1/61be9660ab50101cbc66b113/2da8978c-acff-47bd-8f28-432131344521/13.jpg?format=750w" alt="">
+                            <h4 class="producto__titulo">ABRIGO PATAGONIA</h4>
+                            <p class="producto__detalles">Inspiradas en los colores de la flora y fauna de la Patagonia chilena.</p>
+                            <ul class="producto__tallas">
+                                <li class="tallas__tipo">tallas:</li>
+                                <li><a class="tallas__tipo" href="#">s</a></li>
+                                <li><a class="tallas__tipo" href="#">m</a></li>
+                                <li><a class="tallas__tipo" href="#">l</a></li>
+                                <li><a class="tallas__tipo" href="#">xl</a></li>
+                                <li><a class="tallas__tipo" href="#">xxl</a></li>
+                            </ul>
+                            <p class="producto__precio"><span class="producto__precio--oferta">$150.000 </span> $136.000</p>
+                            <button class="producto__btn"><p>COMPRAR</p></button>
+                        </article>
+                        <article class="producto">
+                            <img class="producto__img" src="https://trebolsastreria.com/cdn/shop/files/mono-kimono-negro_2.jpg?v=1690389687&width=600" alt="">
+                            <h4 class="producto__titulo">MONO KIMONO</h4>
+                            <p class="producto__detalles">Enterito inspirado en los tradicionales kimonos japoneses.</p>
+                            <ul class="producto__tallas">
+                                <li class="tallas__tipo">tallas:</li>
+                                <li><a class="tallas__tipo" href="#">s</a></li>
+                                <li><a class="tallas__tipo" href="#">m</a></li>
+                                <li><a class="tallas__tipo" href="#">l</a></li>
+                                <li><a class="tallas__tipo" href="#">xl</a></li>
+                                <li><a class="tallas__tipo" href="#">xxl</a></li>
+                            </ul>
+                            <p class="producto__precio"><span class="producto__precio--oferta">$189.000 </span>$170.000</p>
+                            <button class="producto__btn"><p>COMPRAR</p></button>
+                            </a>
+                        </article>
+                        <article class="producto">
+                            <img class="producto__img" src="https://lubymaria.cl/wp-content/uploads/2023/01/blusa-manga-globo-crudo-2.webp" alt="">
+                            <h4 class="producto__titulo">BLUSA MANGA GLOBO</h4>
+                            <p class="producto__detalles">Blusa elasticada en el puño, cuello redondo y fabricada en 100% algodón pima orgánico con certificación GOTS.</p>
+                            <ul class="producto__tallas">
+                                <li class="tallas__tipo">tallas:</li>
+                                <li><a class="tallas__tipo" href="#">s</a></li>
+                                <li><a class="tallas__tipo" href="#">m</a></li>
+                                <li><a class="tallas__tipo" href="#">l</a></li>
+                                <li><a class="tallas__tipo" href="#">xl</a></li>
+                                <li><a class="tallas__tipo" href="#">xxl</a></li>
+                            </ul>
+                            <p class="producto__precio"><span class="producto__precio--oferta">$59.000 </span>$55.600</p>
+                            <button class="producto__btn"><p>COMPRAR</p></button>
+                        </article>
+                        <article class="producto">
+                            <img class="producto__img" src="https://wouf.com/cdn/shop/files/WOUF-HD230022-Bucket-Hat-Cuore-Front.jpg?v=1715856610&width=493%20493w" alt="">
+                            <h4 class="producto__titulo">GORRO CUORE</h4>
+                            <p class="producto__detalles">Este gorro está confeccionado con denim 100% algodón orgánico, grabado a láser. Su forro es de algodón orgánico.</p>
+                            <ul class="producto__tallas">
+                                <li class="tallas__tipo" >tamaño: </a></li>
+                                <li><a class="tallas__tipo" href="#">36 (Talla única)</a></li>
+                            </ul>
+                            <p class="producto__precio"><span class="producto__precio--oferta">$45.000 </span>$22.500</p>
+                            <button class="producto__btn">COMPRAR</button>
+                        </article>  
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer class="footer">
+            <P class="footer__parrafo"><strong>&COPY; Verde Moda, 2025</strong></P>
+        </footer>
     </body>
 </html>
