@@ -342,3 +342,16 @@
     justify-content: center;
     text-align: center;
 }
+
+.btn-wspp{
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    bottom: 10px;
+    right: 10px;
+    background: white;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    fill: #269b39;
+}
