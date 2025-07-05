@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Verde Moda</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6677/6677621.png" type="image/png">
         <!--Import de Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,6 @@
         <link rel="stylesheet" href="./assets/css/base.css">
         <link rel="stylesheet" href="./assets/css/layout.css">
         <link rel="stylesheet" href="./assets/css/modules.css">
-
     </head>
 
     <body>
@@ -31,8 +31,10 @@
                         </button>
                     </form>
                     <!--Área de Usuario-->                    
-                    <a class="header__cuenta" href="#" target="_self" >Mi cuenta</a>
-                    <a class="header__carrito" href="#" target="_self" >Carrito</a>                   
+                    <a class="header__cuenta" href="#" target="_self" >
+                        <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/></svg>Mi cuenta</a>
+                    <a class="header__carrito" href="#" target="_self" >
+                        <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/></svg>Carrito</a>                   
                 </div>
             </div>
             <!--Navbar menú-->
@@ -48,8 +50,8 @@
                                 <div class="desplegable__catalogo">
                                     <h4 class="desplegable__titulo">Categorías Destacadas</h4>
                                     <ul class="desplegable__list">
-                                        <li><a href=""><p>Vestuario</p></a></li>
-                                        <li><a href=""><p>Accesorios</p></a></li>
+                                        <li><a href="clothes.html"><p>Vestuario</p></a></li>
+                                        <li><a href="accesories.html"><p>Accesorios</p></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -76,60 +78,151 @@
                         <article class="producto">
                             <img class="producto__img" src="https://images.squarespace-cdn.com/content/v1/61be9660ab50101cbc66b113/2da8978c-acff-47bd-8f28-432131344521/13.jpg?format=750w" alt="">
                             <h4 class="producto__titulo">ABRIGO PATAGONIA</h4>
-                            <p class="producto__detalles">Inspiradas en los colores de la flora y fauna de la Patagonia chilena.</p>
                             <ul class="producto__tallas">
                                 <li class="tallas__tipo">tallas:</li>
                                 <li><a class="tallas__tipo" href="#">s</a></li>
                                 <li><a class="tallas__tipo" href="#">m</a></li>
                                 <li><a class="tallas__tipo" href="#">l</a></li>
                                 <li><a class="tallas__tipo" href="#">xl</a></li>
-                                <li><a class="tallas__tipo" href="#">xxl</a></li>
                             </ul>
                             <p class="producto__precio"><span class="producto__precio--oferta">$150.000 </span> $136.000</p>
-                            <button class="producto__btn"><p>COMPRAR</p></button>
+                            <button class="producto__btn" id=""><p>COMPRAR</p></button>
                         </article>
+                            <!--Ventana emergente-->
+                            <div class="producto__ventana " id="abrigo-patagonia">
+                                <div class="ficha-producto">
+                                    <div class="ficha__img">
+                                        <img src="https://images.squarespace-cdn.com/content/v1/61be9660ab50101cbc66b113/2da8978c-acff-47bd-8f28-432131344521/13.jpg?format=750w">
+                                    </div>
+                                    <div class="ficha__detalles">
+                                        <h2 class="ficha__titulo">ABRIGO PATAGONIA</h2>
+                                        <p class="ficha__descripcion">Inspiradas en los colores de la flora y fauna de la Patagonia chilena.</p>
+                                        <form class="ficha__form">
+                                            <p>Tallas: </p>
+                                            <input type="radio" id="small" name="talla" value="s">
+                                            <label for="small">S</label><br>
+                                            <input type="radio" id="medium" name="talla" value="m">
+                                            <label for="medium">M</label><br>
+                                            <input type="radio" id="large" name="talla" value="l">
+                                            <label for="large">L</label><br>
+                                            <input type="radio" id="extra-large" name="talla" value="xl">
+                                            <label for="extra-large">XL</label>
+                                        </form>
+                                        <p class="producto__precio"><span class="producto__precio--oferta">$150.000 </span> $136.000</p>
+                                        <a class="ficha__btn-agregar" href="#" target="_parent">Añadir al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        
                         <article class="producto">
                             <img class="producto__img" src="https://trebolsastreria.com/cdn/shop/files/mono-kimono-negro_2.jpg?v=1690389687&width=600" alt="">
                             <h4 class="producto__titulo">MONO KIMONO</h4>
-                            <p class="producto__detalles">Enterito inspirado en los tradicionales kimonos japoneses.</p>
                             <ul class="producto__tallas">
                                 <li class="tallas__tipo">tallas:</li>
                                 <li><a class="tallas__tipo" href="#">s</a></li>
                                 <li><a class="tallas__tipo" href="#">m</a></li>
                                 <li><a class="tallas__tipo" href="#">l</a></li>
                                 <li><a class="tallas__tipo" href="#">xl</a></li>
-                                <li><a class="tallas__tipo" href="#">xxl</a></li>
                             </ul>
                             <p class="producto__precio"><span class="producto__precio--oferta">$189.000 </span>$170.000</p>
                             <button class="producto__btn"><p>COMPRAR</p></button>
                             </a>
                         </article>
+                        <!--Ventana emergente-->
+                            <div class="producto__ventana" id="mono-kimono">
+                                <div class="ficha-producto">
+                                    <div class="ficha__img">
+                                        <img src="https://trebolsastreria.com/cdn/shop/files/mono-kimono-negro_2.jpg?v=1690389687&width=600">
+                                    </div>
+                                    <div class="ficha__detalles">
+                                        <h2 class="ficha__titulo">MONO KIMONO</h2>
+                                        <p class="ficha__descripcion">Enterito inspirado en los tradicionales kimonos japoneses.</p>
+                                        <form class="ficha__form">
+                                            <p>Tallas: </p>
+                                            <input type="radio" id="small" name="talla" value="s">
+                                            <label for="small">S</label><br>
+                                            <input type="radio" id="medium" name="talla" value="m">
+                                            <label for="medium">M</label><br>
+                                            <input type="radio" id="large" name="talla" value="l">
+                                            <label for="large">L</label><br>
+                                            <input type="radio" id="extra-large" name="talla" value="xl">
+                                            <label for="extra-large">XL</label>
+                                        </form>
+                                        <p class="producto__precio"><span class="producto__precio--oferta">$189.000 </span> $170.000</p>
+                                        <a class="ficha__btn-agregar" href="#" target="_parent">Añadir al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+
                         <article class="producto">
                             <img class="producto__img" src="https://lubymaria.cl/wp-content/uploads/2023/01/blusa-manga-globo-crudo-2.webp" alt="">
                             <h4 class="producto__titulo">BLUSA MANGA GLOBO</h4>
-                            <p class="producto__detalles">Blusa elasticada en el puño, cuello redondo y fabricada en 100% algodón pima orgánico con certificación GOTS.</p>
                             <ul class="producto__tallas">
                                 <li class="tallas__tipo">tallas:</li>
                                 <li><a class="tallas__tipo" href="#">s</a></li>
                                 <li><a class="tallas__tipo" href="#">m</a></li>
                                 <li><a class="tallas__tipo" href="#">l</a></li>
                                 <li><a class="tallas__tipo" href="#">xl</a></li>
-                                <li><a class="tallas__tipo" href="#">xxl</a></li>
                             </ul>
                             <p class="producto__precio"><span class="producto__precio--oferta">$59.000 </span>$55.600</p>
                             <button class="producto__btn"><p>COMPRAR</p></button>
                         </article>
+                        <!--Ventana emergente-->
+                            <div class="producto__ventana" id="blusa-globo">
+                                <div class="ficha-producto">
+                                    <div class="ficha__img">
+                                        <img src="https://lubymaria.cl/wp-content/uploads/2023/01/blusa-manga-globo-crudo-2.webp">
+                                    </div>
+                                    <div class="ficha__detalles">
+                                        <h2 class="ficha__titulo">BLUSA MANGA GLOBO</h2>
+                                        <p class="ficha__descripcion">Blusa elasticada en el puño, cuello redondo y fabricada en 100% algodón pima orgánico con certificación GOTS.</p>
+                                        <form class="ficha__form">
+                                            <p>Tallas: </p>
+                                                <input type="radio" id="small" name="talla" value="s">
+                                                <label for="small">S</label><br>
+                                                <input type="radio" id="medium" name="talla" value="m">
+                                                <label for="medium">M</label><br>
+                                                <input type="radio" id="large" name="talla" value="l">
+                                                <label for="large">L</label><br>
+                                                <input type="radio" id="extra-large" name="talla" value="xl">
+                                                <label for="extra-large">XL</label>
+                                        </form>
+                                        <p class="producto__precio"><span class="producto__precio--oferta">$59.000 </span> $55.000</p>
+                                        <a class="ficha__btn-agregar" href="#" target="_parent">Añadir al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+
                         <article class="producto">
                             <img class="producto__img" src="https://wouf.com/cdn/shop/files/WOUF-HD230022-Bucket-Hat-Cuore-Front.jpg?v=1715856610&width=493%20493w" alt="">
                             <h4 class="producto__titulo">GORRO CUORE</h4>
-                            <p class="producto__detalles">Este gorro está confeccionado con denim 100% algodón orgánico, grabado a láser. Su forro es de algodón orgánico.</p>
                             <ul class="producto__tallas">
                                 <li class="tallas__tipo" >tamaño: </a></li>
                                 <li><a class="tallas__tipo" href="#">36 (Talla única)</a></li>
                             </ul>
                             <p class="producto__precio"><span class="producto__precio--oferta">$45.000 </span>$22.500</p>
                             <button class="producto__btn">COMPRAR</button>
-                        </article>  
+                        </article>
+                        <!--Ventana emergente-->
+                            <div class="producto__ventana" id="gorro-cuore">
+                                <div class="ficha-producto">
+                                    <div class="ficha__img">
+                                        <img src="https://wouf.com/cdn/shop/files/WOUF-HD230022-Bucket-Hat-Cuore-Front.jpg?v=1715856610&width=493%20493w">
+                                    </div>
+                                    <div class="ficha__detalles">
+                                        <h2 class="ficha__titulo">GORRO CUORE</h2>
+                                        <p class="ficha__descripcion">Este gorro está confeccionado con denim 100% algodón orgánico, grabado a láser. Su forro es de algodón orgánico.</p>
+                                        <form class="ficha__form">
+                                            <p>Tallas: </p>
+                                            <input type="radio" id="tamaño-s" name="talla" value="36">
+                                            <label for="tamaño-s">36</label><br>
+                                        </form>
+                                        <p class="producto__precio"><span class="producto__precio--oferta">$45.000 </span> $22.500</p>
+                                        <a class="ficha__btn-agregar" href="#" target="_parent">Añadir al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+
                     </div>
                 </div>
             </section>
@@ -137,7 +230,8 @@
         </main>
 
         <footer class="footer">
-            <P class="footer__parrafo"><strong>&COPY; Verde Moda, 2025</strong></P>
+            <p class="footer__parrafo"><strong>&COPY; Verde Moda, 2025</strong></p>
         </footer>
+    <script src="assets/js/script.js"></script>
     </body>
 </html>
