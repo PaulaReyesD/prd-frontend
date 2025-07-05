@@ -237,7 +237,7 @@
 /* Estilos de Ventana emergente */
 
 .producto__ventana {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -251,7 +251,7 @@
 }
 
 .ficha-producto{
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
@@ -260,6 +260,7 @@
     background-color: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+    position: relative;
 }
 
 .ficha__img{
@@ -305,4 +306,14 @@
     display: flex;
     flex-direction: row;
     gap: 5px;
+}
+
+.btn__cerrar{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #c4c4c4;
+    padding: 2px;
 }
