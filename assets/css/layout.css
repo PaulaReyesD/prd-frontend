@@ -317,3 +317,28 @@
     border: 1px solid #c4c4c4;
     padding: 2px;
 }
+
+/* CSS de catalogos */
+
+.categoria__productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px;
+    padding: 15px;
+}
+
+.accesorios, .vestuarios{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.producto__vestuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
