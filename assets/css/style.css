@@ -640,6 +640,11 @@ footer {
     .article__text{
         width: 100%;
     }
+
+    .footer__about{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 375px) and (max-width: 652px){
