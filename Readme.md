@@ -22,7 +22,7 @@ Se solicitó un sitio web responsive para una tienda de ropa sustentable llamada
 
 - En el *navbar* se agregó un submenú en el apartado de `CATÁLOGO`, en el que se muestran las categorías en las que están divididos los productos. Este submenú aparece al pasar el cursor por encima de la palabra catálogo del navbar; se utilizó la pseudo-clase hover para esta función.
 
-- Se implementó un botón con el ícono de WhatsApp que está siempre visible en el navegador, este está pensado para redirigir a un enlace _wa.me_, para facilitar la comunicación directa de los clientes con el vendedor. Además, se agregó un formulario de contacto el cual se puede utilizar en su lugar.
+- Se implementó un botón con el ícono de WhatsApp que está siempre visible en el navegador, este está pensado para redirigir a un enlace _wa.me_, para facilitar la comunicación directa de los clientes con el vendedor. Además, se agregó un formulario de contacto el cual se puede enviar directamente desde el sitio web.
 
 ### Paleta de colores
 - `#2F5249`Color base oscuro, transmite estabilidad y conexión con la naturaleza. 
