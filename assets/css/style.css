@@ -214,11 +214,6 @@ footer {
     margin-top: 50px;
 }
 
-.ofertas-temporada {
-    display: flex;
-    justify-content: center;
-}
-
 .ofertas__contenido {
     display: flex;
     flex-direction: column;
