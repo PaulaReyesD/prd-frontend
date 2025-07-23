@@ -1,12 +1,20 @@
 //abstracts
+@use 'abstracts/mixins';
 @use 'abstracts/variables';
+
 
 //base
 @use 'base/base';
 @use 'base/resets';
+@use 'base/typography';
 
 //components
-@use 'components/article';
+@use 'components/button';
+@use 'components/card';
 
 //layout
 @use 'layout/header';
+@use 'layout/footer';
+
+//pages(index.html)
+@use 'pages/home';

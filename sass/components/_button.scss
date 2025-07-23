@@ -1,0 +1,10 @@
+@use '../abstracts/variables' as *;
+
+.producto__btn {
+    background-color: #e2b990;
+    border-color: none;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}

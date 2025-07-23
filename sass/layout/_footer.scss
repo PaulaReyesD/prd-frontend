@@ -1,0 +1,39 @@
+@use '../abstracts/variables' as *;
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #437057;
+    color: #F8F8F8;
+    padding-top: 30px;
+    &__about{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__descripcion{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 40vw;
+    }
+    &__redes{
+        display: flex;
+        flex-direction:row;
+        gap: 8px;
+        margin: 10px 0;
+    }
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__copy{
+        text-align: center;
+        padding-bottom: 0.5rem;
+    }
+}

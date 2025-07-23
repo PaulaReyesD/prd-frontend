@@ -36,7 +36,7 @@ footer {
     align-items: center;
     padding: 0px 20px 0px 10px;
 }
-
+logo__tittle
 .header__logo {
     font-family: "Fleur De Leah", cursive;
     font-style: normal;
@@ -183,7 +183,7 @@ footer {
 .btn__hover:hover .desplegable__catalogo {
     display: block;
 }
-
+/*  */
 .article{
     display: flex;
     margin: 2em;
@@ -456,6 +456,13 @@ footer {
     color: #6d6d6d;
     margin-right: 5px;
 }
+vfooter {
+    display: flex;
+    justify-content: center;
+    padding: 15px 20px 15px 20px;
+}
+
+
 
 .footer {
     display: flex;
@@ -499,6 +506,11 @@ footer {
 .footer__copy{
     text-align: center;
 }
+
+
+
+
+
 @media (min-width:891px)and (max-width: 930px){
     .article{
         display: flex;

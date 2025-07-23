@@ -3,13 +3,14 @@
 
 ---
 ## Explicación básica del proyecto.
-Se solicitó un sitio web responsive para una tienda de ropa sustentable llamada "VerdeModa", el obejtivo es mejorar la experiencia del cliente, teniendo un mejor acceso a los catálogos de productos, facilitando la compra y el contacto con el vendedor.
+Se solicitó un sitio web responsive para una tienda de ropa sustentable llamada "VerdeModa", el obejtivo es mejorar la experiencia del cliente, teniendo un mejor acceso a los catálogos de productos, facilitando la compra y el contacto con el vendedor. En esta oportunidad se creó una landing page básica.
 
 ## Tecnologías Utilizadas
 
 - HTML5  
 - CSS3
-- JavaScript  
+- JavaScript 
+- Preprosesador SASS
 - Metodología BEM
 
 ---
