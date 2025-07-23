@@ -1,0 +1,23 @@
+{
+  "name": "verde-moda",
+  "version": "1.0.0",
+  "description": "---\r ## Explicación básica del proyecto.\r Se solicitó un sitio web responsive para una tienda de ropa sustentable llamada \"VerdeModa\", el obejtivo es mejorar la experiencia del cliente, teniendo un mejor acceso a los catálogos de productos, facilitando la compra y el contacto con el vendedor.",
+  "homepage": "https://github.com/PaulaReyesD/prd-frontend#readme",
+  "bugs": {
+    "url": "https://github.com/PaulaReyesD/prd-frontend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulaReyesD/prd-frontend.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.7"
+  }
+}
