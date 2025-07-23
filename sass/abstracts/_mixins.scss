@@ -1,67 +1,11 @@
-@media (min-width:891px)and (max-width: 930px){
-    .article{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .article__img{
-        width: 100vw;
-    }
-    .article__text{
-        width: 100%;
+@mixin tablet {
+    @media (min-width:654px) and (max-width: 840px) {
+        @content;
     }
 }
 
-@media (min-width:654px) and (max-width: 890px) {
-    .nav__menu{
-        flex-direction: column;
-        background-color:#437057;
-        align-items: center;
-    }
-    .article{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .article__img{
-        width: 100vw;
-    }
-    .article__text{
-        width: 100%;
-    }
-}
-
-@media (max-width: 653px) {
-    .header__user-bar{
-        display: flex;
-        flex-direction: column;
-    }
-    .header__usuario{
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav__menu{
-        flex-direction: column;
-        background-color:#437057;
-        align-items: center;
-    }
-    .article{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .article__img{
-        object-fit: cover;
-        display: block;
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-    }
-    .article__text{
-        width: 100%;
-        max-width: 600px;
-    }
-
-    .footer__about{
-        flex-direction: column;
-        margin-left: 1rem;
+@mixin mobile{
+    @media (max-width: 653px) {
+        @content;
     }
 }
